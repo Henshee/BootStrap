@@ -98,7 +98,7 @@
                                                                 </div>
                                                                 <div class="modal-body offset-sm-4 text-center">
                                                                     <form class="row g-3" th:method="PATCH"
-                                                                          th:action="@{/admin/{id}(id=${user.getId()})}"
+                                                                          th:action="@{/api/admin/{id}(id=${user.getId()})}"
                                                                           th:object="${user}">
                                                                         <div class="row">
                                                                             <div class="form-group col-xs-12">
@@ -202,7 +202,7 @@
                                                                 </div>
                                                                 <div class="modal-body offset-sm-4 text-center">
                                                                     <form class="row g-3" th:method="DELETE"
-                                                                          th:action="@{/admin/{id}(id=${user.getId()})}"
+                                                                          th:action="@{/api/admin/{id}(id=${user.getId()})}"
                                                                           th:object="${user}">
                                                                         <div class="row">
                                                                             <div class="form-group col-xs-12">
@@ -280,7 +280,7 @@
                                             <h5 class="card-header">Add new user</h5>
                                             <div class="card-body text-center">
                                                 <div class="form justify-content-center mx-auto col-md-3">
-                                                    <form th:method="POST" th:action="@{/admin/new}"
+                                                    <form th:method="POST" th:action="@{/api/admin/new}"
                                                           th:object="${newUser}">
                                                         <div class="col-md-8">
                                                             <label th:for="firstName" class="font-weight-bold">First
